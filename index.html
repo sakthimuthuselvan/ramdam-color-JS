@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #overall{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 500px;
+            background-color: aqua;
+        }
+       h2{
+        text-align: center;
+       }
+    </style>
+</head>
+<body>
+
+    <div id="overall">
+        <!-- <button onclick=color()>click to change</button> -->
+        <div>
+            <h1>Randam colors </h1>
+            <h2>In javascript</h2>
+        </div>
+    
+    </div>
+    <script>
+        function color(){
+          
+
+        }
+
+        setInterval(()=>{
+            let overall=document.getElementById("overall")
+            let btn =document.getElementById("btn")
+            
+            let randam=Math.floor(Math.random()*12345)
+
+            console.log(randam)
+            overall.style.backgroundColor="#"+randam
+        },1000)
+        
+    </script>
+</body>
+</html>
